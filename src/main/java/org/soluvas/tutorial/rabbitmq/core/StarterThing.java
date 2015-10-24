@@ -1,9 +1,10 @@
-package org.soluvas.starter.rabbitmq.core;
+package org.soluvas.tutorial.rabbitmq.core;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import org.soluvas.tutorial.rabbitmq.jpa.Place;
 
 import java.io.Serializable;
 
@@ -16,7 +17,7 @@ import java.io.Serializable;
 @JsonSubTypes({
         @JsonSubTypes.Type(name="Status", value=Status.class),
         @JsonSubTypes.Type(name="Error", value=Error.class),
-        @JsonSubTypes.Type(name="CommunicateAction", value=CommunicateAction.class),
+        @JsonSubTypes.Type(name="Place", value=Place.class),
 })
 public interface StarterThing extends Serializable {
 }

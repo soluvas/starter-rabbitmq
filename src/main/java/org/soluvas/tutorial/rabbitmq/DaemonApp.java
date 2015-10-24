@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq;
+package org.soluvas.tutorial.rabbitmq;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq.web;
+package org.soluvas.tutorial.rabbitmq.web;
 
 import de.agilecoders.wicket.core.markup.html.bootstrap.common.NotificationPanel;
 import de.agilecoders.wicket.core.markup.html.bootstrap.html.HtmlTag;

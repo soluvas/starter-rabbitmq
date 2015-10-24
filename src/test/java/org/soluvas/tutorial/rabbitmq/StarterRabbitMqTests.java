@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq;
+package org.soluvas.tutorial.rabbitmq;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

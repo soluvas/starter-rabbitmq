@@ -1,0 +1,37 @@
+<wicket:extend>
+<div layout:fragment="content" class="container">
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>Tutorial RabbitMQ</h1>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <table wicket:id="placeTable" class="table table-striped"></table>
+        <p>Untuk menambah <strong>Place</strong>, kirimkan JSON-LD ke topic <code>starter.place</code>, caranya:</p>
+        <ol class="list">
+        <li>Tetap biarkan aplikasi terbuka, tidak perlu diclose.</li>
+        <li>Enable plugin <strong>rabbitmq_management</strong>. Caranya: Jalankan <strong>RabbitMQ Command Prompt</strong>, lalu ketik:<br/>
+        <code>rabbitmq-plugins enable rabbitmq_management</code></li>
+        <li>Pastikan Anda bisa akses <a href="http://localhost:15672/">http://localhost:15672/</a> (user: <code>guest</code>, password: <code>guest</code>)</li>
+        <li>Klik tab <strong>Exchanges</strong></li>
+        <li>Klik exchange <code>amq.topic</code></li>
+        <li>Masuk bagian <strong>Publish message</strong>, masukkan:<br/>
+            Routing key: <code>starter.place</code><br/>
+            Payload:
+<pre>
+{
+    "@type": "Place",
+    "name": "Warung Mamah",
+    "description": "Enak top markotop"
+}</pre></li>
+            <li>Klik Publish message.</li>
+            <li>Cek di web UI aplikasi bahwa place <strong>Warung Mamah</strong> telah ditambahkan.</li>
+        </ol>
+    </div>
+</div>
+</wicket:extend>

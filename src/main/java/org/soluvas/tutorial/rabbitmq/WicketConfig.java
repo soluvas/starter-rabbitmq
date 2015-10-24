@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq;
+package org.soluvas.tutorial.rabbitmq;
 
 import org.apache.wicket.RuntimeConfigurationType;
 import org.apache.wicket.protocol.http.WicketFilter;

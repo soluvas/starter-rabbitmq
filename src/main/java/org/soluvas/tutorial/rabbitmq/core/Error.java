@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq.core;
+package org.soluvas.tutorial.rabbitmq.core;
 
 /**
  * <a href="http://www.hydra-cg.com/spec/latest/core/#hydra:Error">hydra:Error</a>

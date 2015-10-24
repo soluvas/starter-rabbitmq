@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq.core;
+package org.soluvas.tutorial.rabbitmq.core;
 
 public class StarterException extends RuntimeException {
 

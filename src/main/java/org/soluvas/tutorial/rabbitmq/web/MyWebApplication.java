@@ -1,4 +1,4 @@
-package org.soluvas.starter.rabbitmq.web;
+package org.soluvas.tutorial.rabbitmq.web;
 
 import de.agilecoders.wicket.core.Bootstrap;
 import de.agilecoders.wicket.core.settings.BootstrapSettings;
