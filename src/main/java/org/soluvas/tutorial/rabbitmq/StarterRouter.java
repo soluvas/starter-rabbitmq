@@ -52,7 +52,7 @@ public class StarterRouter extends RouteBuilder {
                         exchange.getOut().setBody(null);
                     }
                 })
-                .bean(toJson);
-                //.to("log:OUT" + topic);
+                .bean(toJson)
+                .to("log:OUT" + topic);
     }
 }
