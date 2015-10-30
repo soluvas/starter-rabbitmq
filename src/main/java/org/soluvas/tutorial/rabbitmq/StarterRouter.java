@@ -36,7 +36,7 @@ public class StarterRouter extends RouteBuilder {
         onException(Exception.class).bean(asError).bean(toJson).handled(true);
         errorHandler(new LoggingErrorHandlerBuilder(log));
         final String topic = "starter.place";
-        from("rabbitmq://localhost/amq.topic?connectionFactory=#amqpConnFactory&exchangeType=topic&autoDelete=false&routingKey=" + topic)
+        from("rabbitmq://dummy/amq.topic?connectionFactory=#amqpConnFactory&exchangeType=topic&autoDelete=false&routingKey=" + topic)
                 .to("log:IN." + topic + "?showHeaders=true&showAll=true&multiline=true")
                 .process(exchange -> {
                     final StarterThing thing = toJson.getMapper().readValue(
