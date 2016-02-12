@@ -9,6 +9,7 @@ import org.apache.wicket.extensions.markup.html.repeater.data.table.filter.TextF
 import org.apache.wicket.extensions.markup.html.repeater.util.SortableDataProvider;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
+import org.apache.wicket.model.StringResourceModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.time.Duration;
 import org.soluvas.tutorial.rabbitmq.jpa.Place;
@@ -64,11 +65,11 @@ public class HomePage extends PubLayout {
 
     @Override
     public IModel<String> getTitleModel() {
-        return new Model<>("Tutorial RabbitMQ");
+        return new StringResourceModel("app.title");
     }
 
     @Override
     public IModel<String> getMetaDescriptionModel() {
-        return new Model<>("Tutorial RabbitMQ");
+        return new StringResourceModel("app.description");
     }
 }
